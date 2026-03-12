@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Construction</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg1: #f8fafc;
+      --bg2: #e2e8f0;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top right, var(--bg2), var(--bg1));
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    main {
+      max-width: 40rem;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      backdrop-filter: blur(2px);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+      line-height: 1.6;
+    }
+
+    .dot {
+      display: inline-block;
+      color: var(--accent);
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0%,
+      100% {
+        opacity: 0.25;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Website Under Construction <span class="dot">•</span></h1>
+    <p>
+      We zijn bezig met bouwen aan iets moois.<br />
+      Kom binnenkort terug.
+    </p>
+  </main>
+</body>
+</html>
