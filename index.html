@@ -1,82 +1,247 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Under Construction</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg1: #f8fafc;
-      --bg2: #e2e8f0;
-      --text: #0f172a;
-      --muted: #475569;
-      --accent: #2563eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text);
-      background: radial-gradient(circle at top right, var(--bg2), var(--bg1));
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    main {
-      max-width: 40rem;
-      background: rgba(255, 255, 255, 0.75);
-      border: 1px solid rgba(15, 23, 42, 0.1);
-      border-radius: 14px;
-      padding: 2rem 1.5rem;
-      backdrop-filter: blur(2px);
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      letter-spacing: 0.02em;
-    }
-
-    p {
-      margin: 1rem 0 0;
-      color: var(--muted);
-      font-size: clamp(1rem, 2.2vw, 1.15rem);
-      line-height: 1.6;
-    }
-
-    .dot {
-      display: inline-block;
-      color: var(--accent);
-      animation: blink 1.2s infinite;
-    }
-
-    @keyframes blink {
-      0%,
-      100% {
-        opacity: 0.25;
-      }
-      50% {
-        opacity: 1;
-      }
-    }
-  </style>
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+  />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>seedorf.it | Infrastructure Collective</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
-    <h1>Website Under Construction <span class="dot">•</span></h1>
-    <p>
-      We zijn bezig met bouwen aan iets moois.<br />
-      Kom binnenkort terug.
+  <div class="page">
+    <header class="topbar">
+      <nav aria-label="Section navigation">
+        <a href="#about">About us</a>
+        <a href="#expertise">Services</a>
+        <a href="#experience">Track Record</a>
+        <a href="#education">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+  <div class="hero-card">
+    <p class="eyebrow">seedorf.it</p>
+    <h1>Infrastructure specialists for modern server and cloud services.</h1>
+    <p class="lead">
+      seedorf.it presents itself as a small, senior-focused collective that delivers
+      enterprise server infrastructure, monitoring, virtualization, automation, and cloud-aligned delivery.
+      The experience behind the team spans ministries, enterprise operations, managed
+      services, and modern platform delivery with Git, CI/CD, Packer, Terraform, and Ansible.
     </p>
-  </main>
+
+    <div class="hero-meta">
+      <div class="mini-card">
+        <strong>Positioning</strong>
+        <span>Independent infrastructure collective with a hands-on approach to delivery, monitoring, and platform engineering.</span>
+      </div>
+      <div class="mini-card">
+        <strong>Region</strong>
+        <span>Based in Zoetermeer, working across Dutch public sector and enterprise environments.</span>
+      </div>
+      <div class="mini-card">
+        <strong>Capability</strong>
+        <span>Server platforms, SCOM, VMware, SCCM, Terraform, Packer, PowerShell, and automation delivery at scale.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="content">
+        <section class="section" id="about">
+  <div class="section-heading">
+    <p class="eyebrow">About us</p>
+    <h2>A technical partner built around operational depth</h2>
+    <p>
+      The team behind seedorf.it combines long-term experience in enterprise Windows management,
+      monitoring, automation, and project delivery. The presentation is intentionally general:
+      clients engage with a capable team profile instead of a single-person CV, while the underlying
+      credentials remain rooted in real hands-on delivery across complex environments.
+    </p>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <span class="number">20+</span>
+      <p>Years of combined senior experience in system administration, Microsoft infrastructure, and operations support.</p>
+    </div>
+    <div class="stat">
+      <span class="number">10+</span>
+      <p>Enterprise and government environments represented in the track record, including ministries, IBM, KPN, and municipalities.</p>
+    </div>
+    <div class="stat">
+      <span class="number">24/7</span>
+      <p>Delivery mindset shaped by operational ownership, critical incident response, and stable infrastructure rollouts.</p>
+    </div>
+  </div>
+</section>
+        <section class="section" id="expertise">
+  <div class="section-heading">
+    <p class="eyebrow">Services</p>
+    <h2>Core services and delivery stack</h2>
+  </div>
+
+  <div class="skills">
+    <article class="chip-box">
+      <h3>Windows Platforms</h3>
+      <p>Windows Server estates, workstation environments, Exchange, Terminal Services, DFS, Group Policy, and lifecycle administration.</p>
+    </article>
+    <article class="chip-box">
+      <h3>Monitoring</h3>
+      <p>SCOM design, management pack development, dashboarding, alert tuning, and integration of third-party monitoring components.</p>
+    </article>
+    <article class="chip-box">
+      <h3>Virtualization</h3>
+      <p>VMware and Hyper-V operations, template engineering, cluster services, migrations, and virtual server lifecycle management.</p>
+    </article>
+    <article class="chip-box">
+      <h3>Automation</h3>
+      <p>Git workflows, CI/CD pipelines, PowerShell, Packer, Terraform, and Ansible Automation Platform for repeatable delivery.</p>
+    </article>
+  </div>
+</section>
+        <section class="section" id="experience">
+  <div class="section-heading">
+    <p class="eyebrow">Track Record</p>
+    <h2>Representative assignments and proven environments</h2>
+  </div>
+
+  <div class="timeline">
+    <article class="timeline-card">
+      <div class="timeline-date">May 2023 - Current</div>
+      <div>
+        <h3>Modern Windows Delivery</h3>
+        <p class="company">Ministry of Transportation (RWS)</p>
+        <p>
+          Delivery work around Windows server building blocks, VMware templates,
+          and Windows-focused automation playbooks in a SCRUM-driven environment.
+        </p>
+        <ul>
+          <li>Added automation scripts to Git repositories and supported CI/CD-based deployments.</li>
+          <li>Built Windows VMware templates with Packer and tested deployments with Terraform.</li>
+          <li>Created AAP playbooks for Windows server provisioning and software rollout.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="timeline-card">
+      <div class="timeline-date">December 2021 - Current</div>
+      <div>
+        <h3>Technical Community Presence</h3>
+        <p class="company">Cardano Ecosystem</p>
+        <p>
+          Public-facing technical engagement that shows the ability to translate
+          complex systems and governance topics into clear communication.
+        </p>
+        <ul>
+          <li>Spoke in X spaces and attended NFT LV 2023.</li>
+          <li>Speaker at the Dutch Cardano Summit in 2024.</li>
+          <li>Participated in constitutional workshops, registered as a DRep, and worked on a stake pool.</li>
+          <li>Chosen as the travelling alternate for The Netherlands at the Cardano Constitutional Convention in Argentina.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="timeline-card">
+      <div class="timeline-date">September 2016 - April 2023</div>
+      <div>
+        <h3>Enterprise Monitoring Engineering</h3>
+        <p class="company">Defense Ministry</p>
+        <p>
+          Enterprise monitoring engineering focused on development, configuration,
+          and fine-tuning of SCOM management packs based on operational requirements.
+        </p>
+        <ul>
+          <li>Designed and implemented multiple SCOM 2016 and 1807 environments through automated scripting.</li>
+          <li>Developed custom management packs with Visual Studio and PowerShell.</li>
+          <li>Built monitoring dashboards and integrated third-party packs for hardware, storage, VMware, SharePoint, and Exchange.</li>
+          <li>Migrated SCOM 2012 SP1 environments to SCOM 2016 and 1807.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="timeline-card">
+      <div class="timeline-date">February 2014 - July 2016</div>
+      <div>
+        <h3>High-Availability Monitoring Platforms</h3>
+        <p class="company">Interior Ministry (SCC ICT)</p>
+        <p>
+          Design and implementation of high-availability SCOM platforms with gateway expansion,
+          custom monitoring, and dashboarding for enterprise infrastructure visibility.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+        <div class="career-grid">
+          <section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Foundation</p>
+    <h2>Broad infrastructure background</h2>
+  </div>
+  <div class="compact-list">
+    <div class="compact-item">
+      <strong>Patching and Hardening - KPN</strong>
+      <span>Server patching and hardening under CIS guidelines, including downtime planning, backups, snapshots, and WSUS policy management.</span>
+    </div>
+    <div class="compact-item">
+      <strong>Education Environment Support - GSG Leo Vroman</strong>
+      <span>Server management, Microsoft Multipoint deployment via SCCM, and operational improvement of SCOM and SCCM environments.</span>
+    </div>
+    <div class="compact-item">
+      <strong>Managed Services Operations - A&amp;O Services</strong>
+      <span>Operations across OTAP environments with virtual servers, Exchange clustering, SCCM, SCOM, and storage infrastructure.</span>
+    </div>
+    <div class="compact-item">
+      <strong>IBM, municipalities, insurers, and managed environments</strong>
+      <span>Delivery across server administration, monitoring, antivirus rollout, WSUS deployment, backup control, virtualization support, and major incident handling.</span>
+    </div>
+  </div>
+</section>
+          <section class="section" id="education">
+  <div class="section-heading">
+    <p class="eyebrow">Credentials</p>
+    <h2>Education and certifications behind the team profile</h2>
+  </div>
+
+  <div class="compact-list">
+    <div class="compact-item">
+      <strong>Haagse Hogeschool</strong>
+      <span>2001 - 2006<br />Bachelor's degree in IT / Business Administration</span>
+    </div>
+    <div class="compact-item">
+      <strong>Mondriaan College</strong>
+      <span>1997 - 2001<br />MBO in Informatics</span>
+    </div>
+  </div>
+
+  <div class="certs">
+    <div class="cert-card">
+      <strong>Microsoft</strong>
+      <p>MCSE 2003, Messaging 2003, MCTS 2008, MCITP 2008, Exchange 2010, MCP NT4</p>
+    </div>
+    <div class="cert-card">
+      <strong>Operations</strong>
+      <p>ITIL Foundation, PRINCE2 Foundation, VCP 5</p>
+    </div>
+  </div>
+</section>
+        </div>
+        <section class="footer" id="contact">
+  <p>
+    seedorf.it<br />
+    Senior infrastructure, monitoring, and automation delivery<br />
+    Zoetermeer, The Netherlands ·
+    <a href="mailto:info@seedorf.it">info@seedorf.it</a>
+  </p>
+</section>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
